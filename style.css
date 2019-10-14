@@ -42,6 +42,27 @@ nav{
 .topnav .icon{
 	display: none;
 }
+main{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+main .main_welcome{
+	background: #000;
+	text-align: center;
+	padding: 200px 0 410px 0;
+}
+main .main_welcome p{
+	color: #999999;
+	font-size:20px;
+}
+main .main_welcome h1{
+	color: #999999;
+	font-size:44px;
+}
+.MKDisegn{
+	color: #fcac45;
+}
 
 
 
