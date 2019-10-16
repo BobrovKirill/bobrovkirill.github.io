@@ -91,6 +91,7 @@ main .main_about{
 	border-bottom: 3px solid #fcac45;
 	padding-bottom: 20px;
 	font-size: 34px;
+	text-transform: uppercase;
 }
 .main_about_rigth p{
 	margin: 30px 0 50px 0;
@@ -119,6 +120,7 @@ main .main_about{
 .main_team h1{
 	font-size: 44px;
 	padding-bottom: 30px;
+	text-transform: uppercase;
 }
 .line {
 	width: 150px;
@@ -198,6 +200,43 @@ main .main_about{
 	margin-left: 30px;
 }
 
+
+.main_testimonials{
+	background: #000;
+	text-align: center;
+	color: #fff;
+}
+.main_testimonials p{
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+.main_testimonials .testimonial {
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 50px;
+}
+.main_testimonials h1{
+	text-transform: uppercase;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	font-size: 44px;
+}
+.main_work{
+	text-align: center;
+	padding: 100px 0 100px 0;
+
+}
+.main_work h1{
+	margin-bottom: 30px;
+}
+.main_work p{
+	margin-bottom: 175px;
+	color: #6c6c6c;
+}
+.main_work img:hover{
+	opacity: 0.8;
+}
 
 
 
@@ -285,4 +324,13 @@ main .main_about{
 	.services_cards{
 		grid-template-columns: auto;
 	}
+	.line1 img:not(:first-child){
+		display: none;
+	}
+	.line2 img:not(:first-child){
+		display: none;
+	}
+	.line3 img:not(:first-child){
+		display: none;
+	}		
 }
