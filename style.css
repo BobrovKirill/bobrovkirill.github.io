@@ -67,6 +67,10 @@ main .main_welcome h1{
 .MKDisegn{
 	color: #fcac45;
 }
+
+
+
+
 .wrapper{
 	width: 76%;
 	margin: 0 auto;
@@ -86,16 +90,19 @@ main .main_about{
 	display: inline-block;
 	border-bottom: 3px solid #fcac45;
 	padding-bottom: 20px;
+	font-size: 34px;
 }
 .main_about_rigth p{
 	margin: 30px 0 50px 0;
 	color: #6c6c6c;
+	font-size: 18px;
 }
 .main_about_rigth li{
 	text-align: left;
 	background: url(img/mark.png) 0px no-repeat;
 	padding-left: 25px;
 	margin-top: 15px;
+	font-size: 16px;
 }
 .mw-100{
 	min-width: 100%;
@@ -129,9 +136,6 @@ main .main_about{
 	border-radius: 50%;
 	margin:20px auto;
 }
-#.team_cards{
-#	display: flex;
-#}
 .team_cards{
 	text-align: center;
 	display: grid;
@@ -152,6 +156,9 @@ main .main_about{
 	font-size: 14px;
 }
 
+
+
+
 .services_cards{
 	text-align: center;
 	display: grid;
@@ -161,14 +168,20 @@ main .main_about{
 .main_services h1{
 	text-align: center;
 	padding: 100px 0 30px 0;
+	font-size: 44px;
 }
 .main_services p{
 	color: #6c6c6c;
 	margin-bottom: 100px;
+	font-size: 16px;
 }
 .services_cards h4{
 	margin-top: 20px;
 	margin-bottom: 15px;
+	font-size: 25px;
+}
+.services_cards p{
+	font-size: 14px;
 }
 
 
