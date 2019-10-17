@@ -240,6 +240,39 @@ main .main_about{
 
 
 
+.contact_wrapper{
+	width: 753px;
+	margin: 0 auto;
+	color: #636363;
+}
+.red{
+	color: red;
+}
+.form_inputs{
+	margin-top: 100px;
+	display: flex;
+}
+
+input{
+	width: 360px;
+	height: 40px;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+input:first-of-type{
+	margin-right: 23px;
+}
+textarea{
+	width: 100%;
+	height: 163px;
+}
+input, textarea{
+	border:1px solid #999999;
+}
+
+
+
+
 @media screen and (max-width: 1255px) {
 	nav{
 		margin-left: 20%;
