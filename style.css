@@ -252,7 +252,9 @@ main .main_about{
 	margin-top: 100px;
 	display: flex;
 }
-
+form p{
+	text-align: left;
+}
 input{
 	width: 360px;
 	height: 40px;
@@ -268,8 +270,50 @@ textarea{
 }
 input, textarea{
 	border:1px solid #999999;
+	margin-top: 5px;
+}
+.button_block{
+	display: flex;
+	justify-content: flex-end;
+}
+input[type=submit] {
+	width: 165px;
+	height: 40px;
+	background: #fcac45;
+	color: #fff;
+	margin-right: 0;
+	margin-top: 30px;
+}
+.contact_from{
+	padding: 100px 0 100px 0;
 }
 
+.contact_from h1{
+	text-align: center;
+	color: #000;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+
+
+footer{
+	background: #222222;
+	width: 100%;
+	height: auto;
+	padding: 30px 0 30px 0;
+
+}
+.social{
+	display: flex;
+	justify-content: center;
+}
+.social img{
+	margin-left: 12px;
+}
+.social img:hover{
+	opacity: 0.5;
+}
 
 
 
