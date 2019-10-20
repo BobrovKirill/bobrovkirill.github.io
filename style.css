@@ -15,6 +15,7 @@ header{
 	width: 100%;
 	background: #000;
 	display: flex;
+	position: fixed;
 }
 .header_logo{
 	text-transform: uppercase;
@@ -28,6 +29,7 @@ header{
 nav{
 	margin-top: 50px;
 	margin-left: 29%;
+	z-index: 100;
 }
 .topnav a{
 	color:#fff;
@@ -142,6 +144,8 @@ main .main_about{
 	text-align: center;
 	display: grid;
 	grid-template-columns: auto auto;
+	grid-column-gap: 2px;
+	
 }
 .card{
 	margin:0 40px;
@@ -241,7 +245,7 @@ main .main_about{
 
 
 .contact_wrapper{
-	width: 753px;
+	width: 58%;
 	margin: 0 auto;
 	color: #636363;
 }
@@ -265,7 +269,7 @@ input:first-of-type{
 	margin-right: 23px;
 }
 textarea{
-	width: 100%;
+	width: 80%;
 	height: 163px;
 }
 input, textarea{
@@ -288,7 +292,7 @@ input[type=submit] {
 	padding: 100px 0 100px 0;
 }
 
-.contact_from h1{
+.contact_from h1,p{
 	text-align: center;
 	color: #000;
 	margin-top: 30px;
@@ -396,7 +400,7 @@ footer{
 	left: 25%;
 	}
 	.team_cards{
-		flex-direction: column;
+		grid-template-columns: auto;;
 	}
 	.services_cards{
 		grid-template-columns: auto;
@@ -409,5 +413,8 @@ footer{
 	}
 	.line3 img:not(:first-child){
 		display: none;
+	}
+	.form_inputs{
+		flex-direction: column;
 	}		
 }
