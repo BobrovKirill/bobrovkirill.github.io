@@ -87,12 +87,13 @@ nav{
 	height: 100vh;
 	background: url("img/intro.jpg") center no-repeat;
 	background-size:cover;
+
+	text-align: center;
 }
 .intro_title{
-	font-size: 36px;
+	font-size: 48px;
 	font-weight: 700;
 	color: #fff;
-	text-align: center;
 	text-transform: uppercase;
 }
 .intro_inner{
@@ -102,7 +103,129 @@ nav{
 }
 .intro_suptitle{
 	font-family: 'Roboto Slab', serif;
-	font-size: 16px;
+	font-size: 20px;
 	color: #fff;
+	margin-top: 35px;
+}
+.intro_suptitle:after{
+	content: "";
+	display: block;
+	width: 145px;
+	height: 3px;
+	background-color: #fff;
+	margin:30px auto;
+	opacity: .7;
+}
+
+/*Кнопка*/
+
+.btn{
+	display: inline-block;
+	vertical-align: top;
+	padding: 8px 30px;
+	font-size: 14px;
+	font-weight: 700;
+	border: 3px solid #fff;
+	color: #fff;
+
+	text-transform: uppercase;
+	text-decoration: none;
+
+	transition: background .4s linear, color .4s linear;
+}
+.btn:hover{
+	background: #fce38a;
+	color: #000;
+}
+/* Услуги */
+
+.services{
+	width: 100%;
+	height: 60vh;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
 	text-align: center;
+}
+.services_inner{
+	width: 100%;
+	margin: 0 auto;
+}
+.services_inner h1:after{
+	content: "";
+	display: block;
+	width: 145px;
+	height: 3px;
+	background-color: #000;
+	margin: 30px auto;
+	opacity: .7;
+}
+.services_inner h1{
+	font-size: 20px;
+}
+.services_inner h2{
+	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
+	margin-bottom: 70px;
+}
+.services_img{
+	display: flex;
+	justify-content: space-between;
+}
+.img_item{
+	width: 40%;
+	margin: 0 50px 0 50px;
+}
+.img_item h4{
+	margin: 30px auto 25px;
+}
+
+/*О НАС */
+.about{
+	width: 100%;
+	height: 80vh;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	text-align: center;
+}
+.about_inner{
+	width: 100%;
+	margin: 0 auto;
+}
+.about_inner h1:after{
+	content: "";
+	display: block;
+	width: 145px;
+	height: 3px;
+	background-color: #000;
+	margin: 30px auto;
+	opacity: .7;
+}
+.about_inner h1{
+	font-size: 20px;
+}
+.about_inner h2{
+	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
+	margin-bottom: 70px;
+}
+.about_foto{
+	display: flex;
+	justify-content: space-between;
+}
+.foto{
+	width: 40%;
+	margin: 0 50px 0 50px;
+}
+.foto h4{
+	margin: 30px auto 25px;
+}
+.foto img{
+	height: 255px;
+	width: 255px;
 }
