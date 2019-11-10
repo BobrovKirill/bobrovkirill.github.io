@@ -330,7 +330,7 @@ nav{
 
 .block{
 	width: 100%;
-	height: 150vh;
+	height: 365px;
 	position: relative;
 
 }
@@ -374,5 +374,80 @@ nav{
 	margin-bottom:30px;
 	font-size: 30px;
 	text-transform: uppercase;
+	font-family: 'Roboto Slab', serif;
+}
+
+/* ПОДРОБНЕЕ О ПРОЕКТАХ*/
+
+.about_project{
+	width: 100%;
+	height: 150vh;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.header_project{
+	font-weight: 700;
+	margin-bottom: 75px;
+	font-size: 20px;
+}
+
+.header_project h3:after{
+	content:"";
+	width: 165px;
+	height: 3px;
+	background: #000;
+	opacity: .7;
+	display: block;
+	margin: 30px auto;
+}
+.project{
+	display: flex;
+	flex-wrap: wrap;
+}
+.project img{
+	margin-right: 30px;
+	margin-bottom: 80px;
+}
+.project_text{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	width: 650px;
+}
+.data_project{
+	height: 75px;
+	width: 75px;
+	border: 3px solid #ccc;
+	margin-bottom: 25px;
+}
+.data_project h3{
+	margin: 15px 18px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 700;
+
+}
+.header_text{
+	display: flex;
+}
+.text_inner{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin-left: 26px;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.text_inner h5{
+	margin-top: 20px;
+	font-size: 13px;
+	text-transform: none;
+}
+.project_text p{
+	text-align: left;
+	margin-bottom: 40px;
 	font-family: 'Roboto Slab', serif;
 }
