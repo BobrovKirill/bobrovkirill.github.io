@@ -13,6 +13,22 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 }
+.up{
+	height: 30px;
+	width: 65px;
+	background: #ccc;
+	color: #000;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 1000;
+	cursor: pointer;
+	padding-top: 10px;
+	padding-left: 10px;
+
+	border: 2px solid #000;
+	border-radius: 5px;
+}
 /* КОНТЕЙНЕР */
 .container{
 	width: 100%;
@@ -190,7 +206,6 @@ nav{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	text-align: center;
 }
 .about_inner{
@@ -316,18 +331,48 @@ nav{
 .block{
 	width: 100%;
 	height: 150vh;
-	background: #fff;
+	position: relative;
+
 }
 .block_header{
+	background: url(img/block.png) no-repeat center;
+	background-size: cover;
 	width: 100%;
-	background: #b94f2c;
+	height: 365px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
 }
 
 .block_img{
-	background: url(img/block.png) no-repeat center;
-	background-size: cover;
+	background: #c0301c;
+	width: 100%;
+	height: 365px;
 	opacity: .5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.block_inner{
+	margin: 0 auto;
+	position: absolute;
+	left: 600px;
+	top: 100px;
+	z-index: 3;
+
+}
+.block_text{
+	color: #fff;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content:center;
 	text-align: center;
+}
+.block_text h4{
+	margin-bottom:30px;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-family: 'Roboto Slab', serif;
 }
