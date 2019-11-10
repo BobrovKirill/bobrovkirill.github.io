@@ -332,6 +332,7 @@ nav{
 	width: 100%;
 	height: 365px;
 	position: relative;
+	margin: 100px auto 100px;
 
 }
 .block_header{
@@ -381,12 +382,13 @@ nav{
 
 .about_project{
 	width: 100%;
-	height: 150vh;
+	height: 110vh;
 	background: #fff;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	margin: 100px auto 100px;
 }
 .header_project{
 	font-weight: 700;
@@ -450,4 +452,25 @@ nav{
 	text-align: left;
 	margin-bottom: 40px;
 	font-family: 'Roboto Slab', serif;
+}
+
+/*Клиенты*/
+
+.lable{
+	width: 100%;
+	height: 50vh;
+	background: #f8f8f8;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.lable_img{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 90px;
+}
+.lable h3{
+	font-size: 20px;
+	margin: 80px auto 40px;
 }
