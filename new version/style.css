@@ -13,6 +13,22 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 }
+.up{
+	height: 30px;
+	width: 65px;
+	background: #ccc;
+	color: #000;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 1000;
+	cursor: pointer;
+	padding-top: 10px;
+	padding-left: 10px;
+
+	border: 2px solid #000;
+	border-radius: 5px;
+}
 /* КОНТЕЙНЕР */
 .container{
 	width: 100%;
@@ -190,7 +206,6 @@ nav{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	text-align: center;
 }
 .about_inner{
@@ -228,4 +243,329 @@ nav{
 .foto img{
 	height: 255px;
 	width: 255px;
+}
+
+/* Работы */
+
+.works{
+	width: 100%;
+	height: 150vh;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.works_inner{
+	width: 100%;
+	margin: 0 auto;
+}
+.works_inner h1{
+	font-size: 20px;
+}
+.works_inner h1:after{
+	content: "";
+	width: 145px;
+	height: 3px;
+	display: block;
+	margin: 30px auto;
+	background: #000;
+	opacity: .7;
+}
+.works_inner p{
+	margin-bottom: 40px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
+}
+.works_img{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.works_items{
+	position: relative;
+}
+.works_item{
+	width: 360px;
+	height: 320px;
+	margin: 20px 20px;
+	background: linear-gradient(to bottom, #c4635a, #d99b95);
+	transition: transform .2s linear;
+}
+.works_foto img{
+	height: 320px;
+	width: 360px;
+	transition: opacity .1s linear;
+}
+.works_items:hover .works_item{
+	transform: translate3d(-10px, -10px, 0);
+}
+.works_items:hover .works_item img{
+	opacity: .2;
+}
+.works_items:hover .works_text{
+	opacity: 1;
+}
+.works_text{
+	width: 100%;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	opacity: 0;
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 2;
+	transform: translate3d(0, -50%, 0);
+	transition: opacity .2s linear;
+}
+.works_text p{
+	margin-bottom: 10px;
+}
+
+/*БЛОК*/
+
+.block{
+	width: 100%;
+	height: 365px;
+	position: relative;
+	margin: 100px auto 100px;
+
+}
+.block_header{
+	background: url(img/block.png) no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 365px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.block_img{
+	background: #c0301c;
+	width: 100%;
+	height: 365px;
+	opacity: .5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.block_inner{
+	margin: 0 auto;
+	position: absolute;
+	left: 600px;
+	top: 100px;
+	z-index: 3;
+
+}
+.block_text{
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	text-align: center;
+}
+.block_text h4{
+	margin-bottom:30px;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-family: 'Roboto Slab', serif;
+}
+
+/* ПОДРОБНЕЕ О ПРОЕКТАХ*/
+
+.about_project{
+	width: 100%;
+	height: 110vh;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin: 100px auto 100px;
+}
+.header_project{
+	font-weight: 700;
+	margin-bottom: 75px;
+	font-size: 20px;
+}
+
+.header_project h3:after{
+	content:"";
+	width: 165px;
+	height: 3px;
+	background: #000;
+	opacity: .7;
+	display: block;
+	margin: 30px auto;
+}
+.project{
+	display: flex;
+	flex-wrap: wrap;
+}
+.project img{
+	margin-right: 30px;
+	margin-bottom: 80px;
+}
+.project_text{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	width: 650px;
+}
+.data_project{
+	height: 75px;
+	width: 75px;
+	border: 3px solid #ccc;
+	margin-bottom: 25px;
+}
+.data_project h3{
+	margin: 15px 18px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 700;
+
+}
+.header_text{
+	display: flex;
+}
+.text_inner{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin-left: 26px;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.text_inner h5{
+	margin-top: 20px;
+	font-size: 13px;
+	text-transform: none;
+}
+.project_text p{
+	text-align: left;
+	margin-bottom: 40px;
+	font-family: 'Roboto Slab', serif;
+}
+
+/*Клиенты*/
+
+.lable{
+	width: 100%;
+	height: 50vh;
+	background: #f8f8f8;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.lable_img{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 90px;
+}
+.lable h3{
+	font-size: 20px;
+	margin: 80px auto 40px;
+}
+
+.contacs{
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.contacs h3{
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 36px;
+}
+.contacs h3:after{
+	content: "";
+	height: 3px;
+	width: 165px;
+	background-color: #ccc;
+	display: block;
+	margin: 36px auto;
+}
+.contacs h6{
+	margin: 36px auto 36px;
+	font-size: 16px;
+}
+.contacs_inner{
+	display: flex;
+	flex-wrap: wrap;
+}
+.adress{
+	width: 30%;
+	text-align: left;
+}
+.adress_inner{
+	margin-bottom: 40px;
+}
+.adress_inner img{
+	margin-bottom: 13px;
+}
+.adress_inner h5{
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+.message{
+	width:65%;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.input{
+	width: 45%;
+	height: 45px;
+	margin: 12px 15px;
+}
+.input_text{
+	height: 100px;
+	width: 94%;
+	margin: 12px 0 24px 15px;
+}
+.btn_massage{
+	color: #000;
+	border:3px solid #ccc;
+	margin-left: 15px;
+	width: 170px;
+	height: 40px;
+}
+
+/*Футер*/
+
+footer{
+	width: 100%;
+	height: 35vh;
+	background:#c0301c;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.social img{
+	margin:0 7px;
+}
+.social:after{
+	content: "";
+	height: 3px;
+	width: 100px;
+	display: block;
+	margin:30px auto;
+	background-color: #b3b3b3;
+}
+footer h3{
+	font-size: 20px;
+	color: #b3b3b3;
 }

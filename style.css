@@ -157,13 +157,11 @@ nav{
 
 .services{
 	width: 100%;
-	height: 60vh;
 	background: #fff;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-
 	text-align: center;
+	padding:100px 0;
 }
 .services_inner{
 	width: 100%;
@@ -201,12 +199,11 @@ nav{
 /*О НАС */
 .about{
 	width: 100%;
-	height: 80vh;
 	background: #fff;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	text-align: center;
+	padding: 100px 0;
 }
 .about_inner{
 	width: 100%;
@@ -249,12 +246,11 @@ nav{
 
 .works{
 	width: 100%;
-	height: 150vh;
 	background: #fff;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	text-align: center;
+	padding: 100px 0;
 }
 .works_inner{
 	width: 100%;
@@ -382,13 +378,11 @@ nav{
 
 .about_project{
 	width: 100%;
-	height: 110vh;
 	background: #fff;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	text-align: center;
-	margin: 100px auto 100px;
+	paddingn: 100px 0;
 }
 .header_project{
 	font-weight: 700;
@@ -458,12 +452,11 @@ nav{
 
 .lable{
 	width: 100%;
-	height: 50vh;
-	background: #f8f8f8;
+	background: #f8f8f8cc;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	text-align: center;
+	padding: 100px 0;
 }
 .lable_img{
 	display: flex;
@@ -547,12 +540,11 @@ nav{
 
 footer{
 	width: 100%;
-	height: 35vh;
 	background:#c0301c;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	text-align: center;
+	padding:100px 0;
 }
 .social img{
 	margin:0 7px;
@@ -563,9 +555,10 @@ footer{
 	width: 100px;
 	display: block;
 	margin:30px auto;
-	background-color: #b3b3b3;
+	background-color: #b3b3b39f;
 }
 footer h3{
 	font-size: 20px;
 	color: #b3b3b3;
 }
+
