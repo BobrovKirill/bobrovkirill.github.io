@@ -32,7 +32,8 @@ body{
 /* КОНТЕЙНЕР */
 .container{
 	width: 100%;
-	max-width: 1300px;
+	max-width: 1230px;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
@@ -59,7 +60,7 @@ header{
 }
 nav{
 	font-size: 14px;
-	margin-left: 400px;
+	margin-left: 9%;
 }
 #menu{
 	display: none;
@@ -93,6 +94,22 @@ nav{
 .link:hover:after{
 	opacity: 1;
 }
+.title{
+	font-size: 22px;
+}
+.title:after{
+	content: "";
+	display: block;
+	width: 145px;
+	height: 3px;
+	background-color: #000;
+	margin: 30px auto;
+	opacity: .7;
+}
+.suptitle{
+	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
+}
 /* Интро */
 
 .intro{
@@ -123,15 +140,6 @@ nav{
 	color: #fff;
 	margin-top: 35px;
 }
-.intro_suptitle:after{
-	content: "";
-	display: block;
-	width: 145px;
-	height: 3px;
-	background-color: #fff;
-	margin:30px auto;
-	opacity: .7;
-}
 
 /*Кнопка*/
 
@@ -155,7 +163,7 @@ nav{
 }
 /* Услуги */
 
-.services{
+.block{
 	width: 100%;
 	background: #fff;
 	display: flex;
@@ -167,116 +175,56 @@ nav{
 	width: 100%;
 	margin: 0 auto;
 }
-.services_inner h1:after{
-	content: "";
-	display: block;
-	width: 145px;
-	height: 3px;
-	background-color: #000;
-	margin: 30px auto;
-	opacity: .7;
-}
-.services_inner h1{
-	font-size: 20px;
-}
-.services_inner h2{
-	font-size: 16px;
-	font-family: 'Roboto Slab', serif;
-	margin-bottom: 70px;
-}
+
 .services_img{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 50px;
 }
 .img_item{
-	width: 40%;
-	margin: 0 50px 0 50px;
+	width: 33.33333%;
+	
 }
 .img_item h4{
 	margin: 30px auto 25px;
 }
 
 /*О НАС */
-.about{
-	width: 100%;
-	background: #fff;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	padding: 100px 0;
-}
 .about_inner{
 	width: 100%;
 	margin: 0 auto;
 }
-.about_inner h1:after{
-	content: "";
-	display: block;
-	width: 145px;
-	height: 3px;
-	background-color: #000;
-	margin: 30px auto;
-	opacity: .7;
-}
-.about_inner h1{
-	font-size: 20px;
-}
-.about_inner h2{
-	font-size: 16px;
-	font-family: 'Roboto Slab', serif;
-	margin-bottom: 70px;
-}
+
 .about_foto{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 50px;
 }
 .foto{
-	width: 40%;
-	margin: 0 50px 0 50px;
+	width: 33.33333%;
 }
 .foto h4{
 	margin: 30px auto 25px;
 }
 .foto img{
-	height: 255px;
-	width: 255px;
+	height: auto;
+	width: 80%;
 }
 
 /* Работы */
 
-.works{
-	width: 100%;
-	background: #fff;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	padding: 100px 0;
-}
 .works_inner{
 	width: 100%;
 	margin: 0 auto;
 }
-.works_inner h1{
-	font-size: 20px;
-}
-.works_inner h1:after{
-	content: "";
-	width: 145px;
-	height: 3px;
-	display: block;
-	margin: 30px auto;
-	background: #000;
-	opacity: .7;
-}
-.works_inner p{
-	margin-bottom: 40px;
-	font-family: 'Roboto Slab', serif;
-	font-size: 16px;
-}
+
 .works_img{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-top: 50px;
 }
 .works_items{
 	position: relative;
@@ -324,11 +272,11 @@ nav{
 
 /*БЛОК*/
 
-.block{
+.block_project{
 	width: 100%;
 	height: 365px;
 	position: relative;
-	margin: 100px auto 100px;
+	padding: 100px auto;
 
 }
 .block_header{
@@ -355,7 +303,7 @@ nav{
 .block_inner{
 	margin: 0 auto;
 	position: absolute;
-	left: 600px;
+	left: 18%;
 	top: 100px;
 	z-index: 3;
 
@@ -376,32 +324,10 @@ nav{
 
 /* ПОДРОБНЕЕ О ПРОЕКТАХ*/
 
-.about_project{
-	width: 100%;
-	background: #fff;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	paddingn: 100px 0;
-}
-.header_project{
-	font-weight: 700;
-	margin-bottom: 75px;
-	font-size: 20px;
-}
-
-.header_project h3:after{
-	content:"";
-	width: 165px;
-	height: 3px;
-	background: #000;
-	opacity: .7;
-	display: block;
-	margin: 30px auto;
-}
 .project{
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 50px;
 }
 .project img{
 	margin-right: 30px;
@@ -411,7 +337,7 @@ nav{
 	display: flex;
 	flex-wrap: wrap;
 	align-content: flex-start;
-	width: 650px;
+	width: 50%;
 }
 .data_project{
 	height: 75px;
@@ -451,52 +377,27 @@ nav{
 /*Клиенты*/
 
 .lable{
-	width: 100%;
 	background: #f8f8f8cc;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	padding: 100px 0;
 }
 .lable_img{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	padding-top: 90px;
+}
+.lable_img img{
+	width: 150px;
+	padding: 0 15px;
 }
 .lable h3{
 	font-size: 20px;
 	margin: 80px auto 40px;
 }
 
-.contacs{
-	width: 100%;
-	height: 100vh;
-	background: #fff;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	text-align: center;
-}
-.contacs h3{
-	font-size: 20px;
-	text-transform: uppercase;
-	margin-bottom: 36px;
-}
-.contacs h3:after{
-	content: "";
-	height: 3px;
-	width: 165px;
-	background-color: #ccc;
-	display: block;
-	margin: 36px auto;
-}
-.contacs h6{
-	margin: 36px auto 36px;
-	font-size: 16px;
-}
 .contacs_inner{
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 50px;
 }
 .adress{
 	width: 30%;
@@ -516,7 +417,6 @@ nav{
 	width:65%;
 	display: flex;
 	flex-wrap: wrap;
-
 }
 .input{
 	width: 45%;
@@ -535,7 +435,11 @@ nav{
 	width: 170px;
 	height: 40px;
 }
-
+.btn_massage:hover{
+	cursor: pointer;
+	color:#fff;
+	background-color:#fceaac;
+}
 /*Футер*/
 
 footer{
@@ -560,5 +464,99 @@ footer{
 footer h3{
 	font-size: 20px;
 	color: #b3b3b3;
+}
+
+/* МЕДИА */
+
+@media (max-width: 1230px){
+	.intro_title{
+		font-size: 30px;
+	}
+	.intro_suptitle{
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 990px){
+	.intro_title{
+		font-size: 26px;
+	}
+	.intro_suptitle{
+		font-size: 12px;
+	}
+	.project{
+		flex-direction: column;
+		align-items:center;
+	}
+	.project img{
+		margin-bottom: 40px;
+	}
+	.lable_img{
+		justify-content: center;
+		padding-bottom: 15px;
+	}
+	.lable h3{
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 770px){
+	nav{
+		display: none;
+	}
+	.block{
+		padding: 50px 0;
+	}
+	.block_project{
+		padding: 50px 0;
+	}
+	.services_img{
+		justify-content: center;
+	}
+	.img_item{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.about_foto{
+		flex-direction: column;
+		align-items:center;
+	}
+	.foto{
+		width: 50%;
+		margin-bottom: 30px;
+	}
+	.block_text h4{
+		font-size: 12px;
+	}
+	.input{
+		width: 65%;
+		height: 28px;
+	}
+	.adress_inner h5{
+		margin-bottom: 8px;
+	}
+}
+@media (max-width: 575px){
+	.intro_title{
+		font-size: 22px;
+	}
+	.intro_suptitle{
+		font-size: 12px;
+	}
+	.title{
+		font-size: 18px;
+	}
+	.suptitle{
+		font-size: 12px;
+	}
+	.title:after{
+		margin:15px auto;
+	}
+	footer{
+		padding: 50px 0;
+	}
+	footer h3{
+		font-size: 12px;
+	}
 }
 
