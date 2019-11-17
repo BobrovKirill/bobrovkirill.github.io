@@ -336,7 +336,6 @@ nav{
 .project_text{
 	display: flex;
 	flex-wrap: wrap;
-	align-content: flex-start;
 	width: 50%;
 }
 .data_project{
@@ -485,7 +484,6 @@ footer h3{
 		font-size: 12px;
 	}
 	.project{
-		flex-direction: column;
 		align-items:center;
 	}
 	.project img{
@@ -493,10 +491,14 @@ footer h3{
 	}
 	.lable_img{
 		justify-content: center;
-		padding-bottom: 15px;
+		padding-top: 40px;
+	}
+	.lable_img img{
+		padding: 0 15px 15px;
 	}
 	.lable h3{
 		font-size: 15px;
+		margin: 20px auto;
 	}
 }
 
@@ -557,6 +559,15 @@ footer h3{
 	}
 	footer h3{
 		font-size: 12px;
+	}
+	.text_inner h3{
+		font-size: 18px;
+	}
+	.text_inner h5{
+		font-size: 12px;
+	}
+	.project_text{
+		width: 100%;
 	}
 }
 
