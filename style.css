@@ -301,9 +301,8 @@ nav{
 	z-index: 2;
 }
 .block_inner{
-	margin: 0 auto;
 	position: absolute;
-	left: 18%;
+	padding-left: 30%;
 	top: 100px;
 	z-index: 3;
 
@@ -477,6 +476,9 @@ footer h3{
 }
 
 @media (max-width: 990px){
+	.block{
+		padding: 50px 0;
+	}
 	.intro_title{
 		font-size: 26px;
 	}
@@ -500,17 +502,31 @@ footer h3{
 		font-size: 15px;
 		margin: 20px auto;
 	}
+	.block_text h4{
+		font-size: 16px;
+	}
+	.project{
+		flex-direction: column;
+		align-items:center;
+	}
+	.project_text{
+		margin-bottom: 15px;
+	}
 }
 
 @media (max-width: 770px){
-	nav{
+	nav .link{
 		display: none;
 	}
+	.link #menu{
+		display: block;
+		color:#fff;
+	}
 	.block{
-		padding: 50px 0;
+		padding: 35px 0;
 	}
 	.block_project{
-		padding: 50px 0;
+		padding: 0;
 	}
 	.services_img{
 		justify-content: center;
@@ -527,9 +543,7 @@ footer h3{
 		width: 50%;
 		margin-bottom: 30px;
 	}
-	.block_text h4{
-		font-size: 12px;
-	}
+
 	.input{
 		width: 65%;
 		height: 28px;
